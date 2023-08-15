@@ -1,5 +1,5 @@
 .exp-ctr {
-    min-width: 70%;
+    min-width: 310px;
     height: 360px;
     /* background-color: rgb(29, 28, 34)!important; */
     background-color: rgb(20, 16, 28)!important;
@@ -8,7 +8,6 @@
     flex-direction: column;
     font-style: italic;
     border-radius: 8px;
-    margin: 50px 0px 0px 20px;
 }
 
 .exp {
@@ -19,4 +18,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    min-width: 310px;
+}
+
+@media (min-width: 768px) {
+    .exp-ctr {
+        min-width: 70%;
+        margin: 50px 0px 0px 20px;
+    }
 }
