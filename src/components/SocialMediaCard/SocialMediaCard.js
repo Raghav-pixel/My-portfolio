@@ -8,9 +8,9 @@ import GithubIcon from '../../assets/images/github.svg';
 const SocialMediaCard = () => {
   return (
     <div className='container'>
-      <img className='ctr-profile' src={avatar} height={'150px'} width={'150px'} style={{ margin: '30px 0', borderRadius: '16px' }} alt='profile_pic' />
+      <img className='ctr-profile' src={avatar} height={'170px'} width={'170px'} style={{ margin: '40px 0', borderRadius: '16px' }} alt='profile_pic' />
       <div className='job-ctr'>
-        <p className='profile-name'>HI! I'M RAGHAV KHANNA</p>
+        <p className='profile-name'>HI! I'M <span style={{ color: 'rgba(47, 240, 147, 0.871)' }}>RAGHAV KHANNA</span></p>
         <p className='profile-job'>FullStack Developer</p>
       </div>
       <br></br>
