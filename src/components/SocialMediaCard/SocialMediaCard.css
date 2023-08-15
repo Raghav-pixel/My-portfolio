@@ -1,0 +1,71 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 16px;
+    margin: 50px 0;
+    width: 310px;
+    height: 500px;
+    background-color: rgb(20, 16, 28)!important;
+    color: white;
+}
+
+.job-ctr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+}
+
+.contact-ctr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 40px;
+}
+
+.social-media-icons-ctr {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.cv-btn {
+    background-color: rgba(47, 240, 147, 0.871);
+    color: black;
+    border: 2px solid rgba(47, 240, 147, 0.871);
+    border-radius: 16px;
+    width: 70%;
+    height: 40px;
+}
+
+.profile-name {
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+.profile-job {
+    font-size: 0.7rem;
+}
+
+.profile-email {
+    font-size: 0.7em;
+}
+
+.profile-mobile {
+    font-size: 0.7em;
+}
+
+.cv-btn:hover {
+    background-color: black;
+    color: white;
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 30%;
+        /* min-width: 200px; */
+    }
+}

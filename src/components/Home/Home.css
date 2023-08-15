@@ -1,0 +1,112 @@
+.home-ctr {
+    width: 310px;
+    height: 520px;
+    /* background-color: rgb(29, 28, 34)!important; */
+    background-color: rgb(20, 16, 28)!important;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    font-style: italic;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.about-card {
+    width: 310px;
+    height: 130px;
+    background-color: rgb(20, 16, 28)!important;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    font-style: italic;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.lang-card {
+    width: 310px;
+    height: 150px;
+    background-color: rgb(20, 16, 28)!important;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    font-style: italic;
+    border-radius: 8px;
+    margin-bottom: 20px;   
+}
+
+.project-card {
+    width: 310px;
+    height: 180px;
+    background-color: rgb(20, 16, 28)!important;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    font-style: italic;
+    border-radius: 8px;
+    margin-bottom: 50px;   
+}
+
+.home-name {
+    font-size: 18px;
+    margin: 20px 20px 10px 20px;
+}
+
+.home-name-color {
+    color: rgba(47, 240, 147, 0.871);
+}
+
+.home-job {
+    font-size: 45px;
+    margin: 20px 20px 10px 20px;
+}
+
+.home-description {
+    font-size: 15px;
+    margin: 20px 20px 10px 20px;
+    color: grey;
+}
+
+.icon-ctr {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+@media (min-width: 768px) {
+    .main-ctr {
+        margin: 50px 0 50px 30px;
+        min-width: 70%;
+        display: flex;
+        flex-direction: column;
+    }
+    .tech-ctr {
+        display: grid;
+        grid-template-columns: 260px 1fr;
+        grid-template-rows: 170px 1fr;
+    }
+    .home-ctr {
+        min-width: 100%;
+        height: 395px;
+    }
+    .about-card {
+        width: 240px;
+        height: 150px;
+    }
+    .lang-card {
+        width: 240px;
+        height: 350px;
+    }
+    .project-card {
+        width: 100%;
+        height: 280px;
+        justify-content: space-around;
+    }
+    .icon-ctr {
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .icon-ctr > img {
+        margin: 20px;
+    }
+}
