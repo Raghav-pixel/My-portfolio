@@ -8,6 +8,8 @@ import Home from './components/Home/Home';
 import About from './components/About/About';
 import Projects from './components/Projects/Projects';
 import Contact from './components/Contact/Contact';
+import Experience from './components/Experience/Experience';
+import 'bootstrap/dist/css/bootstrap.min.css';
 // import {CSSTransition} from 'react-transition-group';
 
 function App() {
@@ -26,9 +28,10 @@ function App() {
             <SocialMediaCard />
             <Routes>
               <Route path='/' Component={Home} exact />
-              <Route path='/about' Component={About} exact />
-              <Route path='/projects' Component={Projects} exact />
-              <Route path='/contact' Component={Contact} exact />
+              <Route path='/about' Component={About} />
+              <Route path='/projects' Component={Projects} />
+              <Route path='/contact' Component={Contact} />
+              <Route path='/experience' Component={Experience} />
             </Routes>
           </div>
         </div>

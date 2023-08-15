@@ -1,0 +1,22 @@
+.exp-ctr {
+    min-width: 70%;
+    height: 360px;
+    /* background-color: rgb(29, 28, 34)!important; */
+    background-color: rgb(20, 16, 28)!important;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    font-style: italic;
+    border-radius: 8px;
+    margin: 50px 0px 0px 20px;
+}
+
+.exp {
+    margin: 20px 20px 30px 20px;
+}
+
+.experience-ctr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

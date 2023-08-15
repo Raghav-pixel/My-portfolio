@@ -1,0 +1,32 @@
+.lang-bar-ctr {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.lang-per {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.progress-bar-ctr {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    height: 6px;
+    background-color: #115635cc !important;
+    border: 1px solid #2ff093;
+    border-radius: 15px;
+    padding: 6px 3px;
+}
+
+.progress-bar {
+    /* width: 60%; */
+    height: 4px;
+    background-color: #2ff093 !important;
+    border: 1px solid #2ff093;
+    border-radius: 15px;
+}
