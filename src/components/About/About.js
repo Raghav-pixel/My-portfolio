@@ -1,6 +1,8 @@
 import React from 'react';
 import './About.css';
 
+
+// describe Projects, experience and education in a timeline
 const About = () => {
   return (
     <div className='about-ctr'>

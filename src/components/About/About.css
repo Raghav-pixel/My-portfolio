@@ -66,3 +66,30 @@
     margin: 5px 20px 10px 20px;
     color: grey;
 }
+
+@media (min-width: 768px) {
+    .about-ctr {
+        margin: 50px 0 50px 30px;
+        min-width: 70%;
+        display: flex;
+        flex-direction: column;
+    }
+    .about-me-card {
+        min-width: 100%;
+        height: 295px;
+    }
+    .home-description {
+        font-size: 20px;
+    }
+    .education-ctr {
+        min-width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .exp-card {
+        width: 48%;
+    }
+    .edu-card {
+        width: 48%;
+    }
+}
