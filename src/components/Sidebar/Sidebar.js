@@ -22,12 +22,12 @@ const navigate = useNavigate();
         <hr style={{ backgroundColor: 'grey', margin: '20px' }}></hr>
         <h3>Follow Me:</h3>
         <div className='sidebar-social-media-icons-ctr'>
-            <a href='/'>
+            <a href='https://www.linkedin.com/in/15-rk/'>
                 <button style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', cursor: 'pointer', margin: '10px', borderRadius: '5px', border: '1px solid black', height: '26px', backgroundColor: 'grey' }}>
                     <img src={LinkedInIcon} alt='linkedIn icon' />
                 </button>
             </a>
-            <a href='/'>
+            <a href='https://github.com/Raghav-pixel'>
                 <button style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', cursor: 'pointer', margin: '10px', borderRadius: '5px', border: '1px solid black', height: '26px', backgroundColor: 'grey' }}>
                     <img src={GithubIcon} alt='Github icon' />
                 </button>

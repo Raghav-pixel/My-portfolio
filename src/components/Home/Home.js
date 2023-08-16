@@ -6,6 +6,7 @@ import JsIcon from '../../assets/images/javascript-programming-language-icon.svg
 import ReactIcon from '../../assets/images/react-js-icon.svg';
 import NodeIcon from '../../assets/images/node-js-icon.svg';
 import { useNavigate } from 'react-router-dom';
+import mobileDesign from '../../assets/images/mobile-design.jpg';
 
 const Home = () => {
   const navigate = useNavigate();
@@ -22,7 +23,7 @@ const Home = () => {
           <span style={{ fontSize: '25px', color: 'rgba(47, 240, 147, 0.871)', margin: '20px 20px 10px 20px' }}>Raghav</span>
           <p style={{ fontSize: '15px', color: 'grey', margin: '0px 20px 10px 20px' }}>More Specialized</p>
           <h2 
-            style={{ fontSize: '20px', margin: '0px 20px 10px 20px', cursor: 'pointer', color: 'rgba(47, 240, 147, 0.871)' }}
+            style={{ fontSize: '24px', margin: '0px 20px 10px 20px', cursor: 'pointer', color: 'rgba(47, 240, 147, 0.871)' }}
             onClick={() => navigate("/about")}
           >
             ABOUT ME
@@ -31,13 +32,23 @@ const Home = () => {
 
         <div className='project-card-home'>
           <div className='icon-ctr'>
-            <img width={'60px'} height={'60px'} src={ReactIcon} alt='React icon' />
-            <img width={'60px'} height={'60px'} src={NodeIcon} alt='Node icon' />
+            {/* <img width={'60px'} height={'60px'} src={ReactIcon} alt='React icon' />
+            <img width={'60px'} height={'60px'} src={NodeIcon} alt='Node icon' /> */}
+            <div className='project-img-ctr-home'>
+              <img className='project-img-home' src={mobileDesign} />
+            </div>          
+            <div className='project-img-ctr-home'>
+              <img className='project-img-home' src={mobileDesign} />
+            </div>          
+            <div className='project-img-ctr-home-optional'>
+              <img className='project-img-home' src={mobileDesign} />
+            </div>
           </div>
           <div>
-            <p style={{ fontSize: '15px', color: 'grey', margin: '0px 20px 10px 20px' }}>Showcase View</p>
+            <p className='showcase-view' style={{  }}>Showcase View</p>
             <h2 
-              style={{ fontSize: '20px', margin: '0px 20px 10px 20px', cursor: 'pointer', color: 'rgba(47, 240, 147, 0.871)' }}
+              className='showcase-view-pt'
+              style={{  }}
               onClick={() => navigate("/projects")}
             >
               PROJECTS
@@ -55,7 +66,7 @@ const Home = () => {
           </div>
           <p style={{ fontSize: '15px', color: 'grey', margin: '0px 20px 10px 20px' }}>Specialization</p>
           <h2 
-            style={{ fontSize: '20px', margin: '0px 20px 10px 20px', cursor: 'pointer', color: 'rgba(47, 240, 147, 0.871)' }} 
+            style={{ fontSize: '24px', margin: '0px 20px 10px 20px', cursor: 'pointer', color: 'rgba(47, 240, 147, 0.871)' }} 
             onClick={() => navigate("/experience")}
           >
             SERVICES OFFER
