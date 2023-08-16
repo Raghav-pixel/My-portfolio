@@ -3,9 +3,9 @@ import './Header.css';
 import HamburgerIcon from '../../assets/images/hamburger.svg';
 import { useNavigate } from 'react-router-dom';
 
-const Header = ({ isSideModalOpen, setIsSideModalOpen }) => {
+const Header = ({ setIsSideModalOpen, selectedHeader, setSelectedHeader }) => {
   const navigate = useNavigate();
-  const [ selectedHeader, setSelectedHeader ] = useState('home');
+  // const [ selectedHeader, setSelectedHeader ] = useState('home');
 
   const handleHomeClick = () => {
     setSelectedHeader('home');

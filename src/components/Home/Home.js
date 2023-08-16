@@ -8,10 +8,21 @@ import NodeIcon from '../../assets/images/node-js-icon.svg';
 import { useNavigate } from 'react-router-dom';
 import mobileDesign from '../../assets/images/mobile-design.jpg';
 
-const Home = () => {
+const Home = ({ selectedHeader, setSelectedHeader }) => {
   const navigate = useNavigate();
+
+  const handleAboutClick = () => {
+    setSelectedHeader('about');
+    navigate('/about');
+  }
+
+  const handleProjectClick = () => {
+    setSelectedHeader('projects');
+    navigate('/projects');
+  }
+
   return (
-    <div className='main-ctr'>    
+    <div className='main-ctr'>
       <div className='home-ctr'>
         <span className='home-name'><span className='home-name-color'>Hi!</span> There I'm</span>
         <h2 className='home-job'>Professional <span className='home-name-color'>Front-end</span> Web Developer</h2>
@@ -24,7 +35,7 @@ const Home = () => {
           <p style={{ fontSize: '15px', color: 'grey', margin: '0px 20px 10px 20px' }}>More Specialized</p>
           <h2 
             style={{ fontSize: '24px', margin: '0px 20px 10px 20px', cursor: 'pointer', color: 'rgba(47, 240, 147, 0.871)' }}
-            onClick={() => navigate("/about")}
+            onClick={handleAboutClick}
           >
             ABOUT ME
           </h2>
@@ -45,11 +56,10 @@ const Home = () => {
             </div>
           </div>
           <div>
-            <p className='showcase-view' style={{  }}>Showcase View</p>
+            <p className='showcase-view'>Showcase View</p>
             <h2 
               className='showcase-view-pt'
-              style={{  }}
-              onClick={() => navigate("/projects")}
+              onClick={handleProjectClick}
             >
               PROJECTS
             </h2>

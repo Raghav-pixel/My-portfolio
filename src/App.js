@@ -15,7 +15,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
 
   const [ isSideModalOpen, setIsSideModalOpen ] = useState(false);
-
+  const [ selectedHeader, setSelectedHeader ] = useState('home');
+  console.log(selectedHeader, 'setSelectedHeader');
   return (
     <>
       <BrowserRouter>
@@ -23,11 +24,15 @@ function App() {
           isSideModalOpen && <Sidebar />
         }
         <div className="app">
-          <Header isSideModalOpen={isSideModalOpen} setIsSideModalOpen={setIsSideModalOpen} />
+          <Header 
+            setIsSideModalOpen={setIsSideModalOpen}
+            selectedHeader={selectedHeader}
+            setSelectedHeader={setSelectedHeader}
+          />
           <div className='content'>
             <SocialMediaCard />
             <Routes>
-              <Route path='/' Component={Home} exact />
+              <Route path='/' Component={() => <Home selectedHeader={selectedHeader} setSelectedHeader={setSelectedHeader} />} exact />
               <Route path='/about' Component={About} />
               <Route path='/projects' Component={Projects} />
               <Route path='/contact' Component={Contact} />
