@@ -5,8 +5,10 @@ import CssIcon from '../../assets/images/css-icon.svg';
 import JsIcon from '../../assets/images/javascript-programming-language-icon.svg';
 import ReactIcon from '../../assets/images/react-js-icon.svg';
 import NodeIcon from '../../assets/images/node-js-icon.svg';
+import { useNavigate } from 'react-router-dom';
 
 const Home = () => {
+  const navigate = useNavigate();
   return (
     <div className='main-ctr'>    
       <div className='home-ctr'>
@@ -19,17 +21,27 @@ const Home = () => {
         <div className='about-card'>
           <span style={{ fontSize: '25px', color: 'rgba(47, 240, 147, 0.871)', margin: '20px 20px 10px 20px' }}>Raghav</span>
           <p style={{ fontSize: '15px', color: 'grey', margin: '0px 20px 10px 20px' }}>More Specialized</p>
-          <h2 style={{ fontSize: '20px', margin: '0px 20px 10px 20px' }}>ABOUT ME</h2>
+          <h2 
+            style={{ fontSize: '20px', margin: '0px 20px 10px 20px', cursor: 'pointer', color: 'rgba(47, 240, 147, 0.871)' }}
+            onClick={() => navigate("/about")}
+          >
+            ABOUT ME
+          </h2>
         </div>
 
-        <div className='project-card'>
+        <div className='project-card-home'>
           <div className='icon-ctr'>
             <img width={'60px'} height={'60px'} src={ReactIcon} alt='React icon' />
             <img width={'60px'} height={'60px'} src={NodeIcon} alt='Node icon' />
           </div>
           <div>
             <p style={{ fontSize: '15px', color: 'grey', margin: '0px 20px 10px 20px' }}>Showcase View</p>
-            <h2 style={{ fontSize: '20px', margin: '0px 20px 10px 20px' }}>PROJECTS</h2>
+            <h2 
+              style={{ fontSize: '20px', margin: '0px 20px 10px 20px', cursor: 'pointer', color: 'rgba(47, 240, 147, 0.871)' }}
+              onClick={() => navigate("/projects")}
+            >
+              PROJECTS
+            </h2>
           </div>
         </div>
 
@@ -42,7 +54,12 @@ const Home = () => {
             <img width={'40px'} height={'40px'} src={NodeIcon} alt='Node icon' />
           </div>
           <p style={{ fontSize: '15px', color: 'grey', margin: '0px 20px 10px 20px' }}>Specialization</p>
-          <h2 style={{ fontSize: '20px', margin: '0px 20px 10px 20px' }}>SERVICES OFFER</h2>
+          <h2 
+            style={{ fontSize: '20px', margin: '0px 20px 10px 20px', cursor: 'pointer', color: 'rgba(47, 240, 147, 0.871)' }} 
+            onClick={() => navigate("/experience")}
+          >
+            SERVICES OFFER
+          </h2>
         </div>
       </div>
     </div>

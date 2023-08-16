@@ -3,16 +3,20 @@ import './Sidebar.css';
 import LinkedInIcon from '../../assets/images/linkedIn.svg';
 import GithubIcon from '../../assets/images/github.svg';
 import InstagramIcon from '../../assets/images/instagram.svg';
+import { useNavigate } from 'react-router-dom';
 
 const Sidebar = () => {
+
+const navigate = useNavigate();
+
   return (
     <div className='sidebar-ctr'>
         <span className='sidebar-name'>Raghav</span>
         <hr style={{ backgroundColor: 'grey', margin: '20px' }}></hr>
         <div className='sidebar-info'>
-            <p>Home</p>
-            <p>About Me</p>
-            <p>Projects</p>
+            <p onClick={() => navigate("/")}>Home</p>
+            <p onClick={() => navigate("/about")}>About Me</p>
+            <p onClick={() => navigate("/projects")}>Projects</p>
             <p>Contact</p>
         </div>
         <hr style={{ backgroundColor: 'grey', margin: '20px' }}></hr>
