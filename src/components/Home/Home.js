@@ -58,15 +58,25 @@ const Home = () => {
 
         <div className='lang-card'>
           <div className='icon-ctr'>
-            <img width={'40px'} height={'40px'} src={HtmlIcon} alt='Html icon' />
-            <img width={'40px'} height={'40px'} src={CssIcon} alt='Css icon' />
-            <img width={'40px'} height={'40px'} src={JsIcon} alt='JS icon' />
-            <img width={'40px'} height={'40px'} src={ReactIcon} alt='React icon' />
-            <img width={'40px'} height={'40px'} src={NodeIcon} alt='Node icon' />
+            <button className='icon-ctr-btn'>
+              <img width={'40px'} height={'40px'} src={HtmlIcon} alt='Html icon' />
+            </button>
+            <button className='icon-ctr-btn'>
+              <img width={'40px'} height={'40px'} src={CssIcon} alt='Css icon' />
+            </button>
+            <button className='icon-ctr-btn'>
+              <img width={'40px'} height={'40px'} src={JsIcon} alt='JS icon' />
+            </button>
+            <button className='icon-ctr-btn'>
+              <img width={'40px'} height={'40px'} src={ReactIcon} alt='React icon' />
+            </button>
+            <button className='icon-ctr-btn'>
+              <img width={'40px'} height={'40px'} src={NodeIcon} alt='Node icon' />
+            </button>
           </div>
           <p style={{ fontSize: '15px', color: 'grey', margin: '0px 20px 10px 20px' }}>Specialization</p>
           <h2 
-            style={{ fontSize: '24px', margin: '0px 20px 10px 20px', cursor: 'pointer', color: 'rgba(47, 240, 147, 0.871)' }} 
+            style={{ fontSize: '24px', margin: '0px 20px 30px 20px', cursor: 'pointer', color: 'rgba(47, 240, 147, 0.871)' }} 
             onClick={() => navigate("/experience")}
           >
             SERVICES OFFER

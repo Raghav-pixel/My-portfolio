@@ -38,6 +38,7 @@
     cursor: pointer;
 }
 
+
 @media (min-width: 768px) {
     .header {
         width: 80%;
@@ -52,6 +53,22 @@
     }
     
     .info > p:active {
+        color: rgba(47, 240, 147, 0.871);
+    }
+
+    .header-home:hover {
+        color: rgba(47, 240, 147, 0.871);
+    }
+
+    .header-about:hover {
+        color: rgba(47, 240, 147, 0.871);
+    }
+
+    .header-projects:hover {
+        color: rgba(47, 240, 147, 0.871);
+    }
+
+    .selected {
         color: rgba(47, 240, 147, 0.871);
     }
 }
