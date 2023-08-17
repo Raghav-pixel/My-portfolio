@@ -51,7 +51,7 @@ const Header = ({ setIsSideModalOpen, selectedHeader, setSelectedHeader }) => {
       <div className='img-ctr'>
         {/* <p>Dark/Light</p>
         <img className='dark-img' src='' alt='sun' /> */}
-        <img className='nav-icon' src={HamburgerIcon} alt="nav-icon" onClick={() => setIsSideModalOpen(true)} />
+        {/* <img className='nav-icon' src={HamburgerIcon} alt="nav-icon" onClick={() => setIsSideModalOpen(true)} /> */}
       </div>
     </div>
   );
