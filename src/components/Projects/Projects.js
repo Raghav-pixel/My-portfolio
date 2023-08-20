@@ -2,6 +2,7 @@ import React from 'react';
 import './Projects.css';
 import mobileDesign from '../../assets/images/mobile-design.jpg';
 import EntertainmentPreview from '../../assets/images/Entertainment-hub-preview.png';
+import NoteZipperPreview from '../../assets/images/NoteZipperPreview.png';
 
 const Projects = () => {
   return (
@@ -20,10 +21,10 @@ const Projects = () => {
 
         <div className='project-card'>
           <div className='project-img-ctr'>
-            <img className='project-img' src={mobileDesign} />
+            <img className='project-img' src={NoteZipperPreview} />
           </div>
           <p className='project-heading'>Shopping App</p>
-          <h3 className='project-description'>E-commerce web app using Reactjs with useReducer and context api</h3>
+          <a className='project_link' href='https://mern-notes-app-awfz.onrender.com/' target='_blank'><h3 className='project-description'>E-commerce web app using Reactjs with useReducer and context api</h3></a>
         </div>
 
         <div className='project-card'>
