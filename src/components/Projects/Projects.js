@@ -1,6 +1,7 @@
 import React from 'react';
 import './Projects.css';
 import mobileDesign from '../../assets/images/mobile-design.jpg';
+import EntertainmentPreview from '../../assets/images/Entertainment-hub-preview.png';
 
 const Projects = () => {
   return (
@@ -11,10 +12,10 @@ const Projects = () => {
       <div className='card-ctr'>
         <div className='project-card'>
           <div className='project-img-ctr'>
-            <img className='project-img' src={mobileDesign} />
+            <img className='project-img' src={EntertainmentPreview} />
           </div>
           <p className='project-heading'>Entertainment Hub</p>
-          <h3 className='project-description'>Responsive Web App using Reactjs and material ui</h3>
+          <a className='project_link' href='https://dashing-chimera-a560fb.netlify.app/' target='_blank'><h3 className='project-description'>Responsive Web App using Reactjs and material ui</h3></a>
         </div>
 
         <div className='project-card'>

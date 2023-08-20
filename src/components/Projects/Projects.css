@@ -61,6 +61,12 @@
     margin: 20px 20px 10px 10px;
 }
 
+.project_link {
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+
 .project-description {
     font-size: 24px;
     font-weight: bold;
