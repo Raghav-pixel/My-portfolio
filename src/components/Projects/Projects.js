@@ -3,6 +3,7 @@ import './Projects.css';
 import mobileDesign from '../../assets/images/mobile-design.jpg';
 import EntertainmentPreview from '../../assets/images/Entertainment-hub-preview.png';
 import NoteZipperPreview from '../../assets/images/NoteZipperPreview.png';
+import HostingPreview from '../../assets/images/Hosting_Preview.png';
 
 const Projects = () => {
   return (
@@ -23,24 +24,26 @@ const Projects = () => {
           <div className='project-img-ctr'>
             <img className='project-img' src={NoteZipperPreview} />
           </div>
-          <p className='project-heading'>Shopping App</p>
-          <a className='project_link' href='https://mern-notes-app-awfz.onrender.com/' target='_blank'><h3 className='project-description'>E-commerce web app using Reactjs with useReducer and context api</h3></a>
-        </div>
-
-        <div className='project-card'>
-          <div className='project-img-ctr'>
-            <img className='project-img' src={mobileDesign} />
-          </div>
           <p className='project-heading'>NoteZipper App</p>
-          <h3 className='project-description'>Full Stack Web app with MERN stack</h3>
+          <a className='project_link' href='https://mern-notes-app-awfz.onrender.com/' target='_blank'><h3 className='project-description'>MERN stack notes taking app using Redux</h3></a>
         </div>
 
         <div className='project-card'>
           <div className='project-img-ctr'>
             <img className='project-img' src={mobileDesign} />
           </div>
-          <p className='project-heading'>Mobile App Design</p>
-          <h3 className='project-description'>Mobile Application Landing Page Design </h3>
+          <p className='project-heading'>Shopping Cart App</p>
+          <h3 className='project-description'>E-commerce web app using Reactjs with useReducer and context api</h3>
+        </div>
+
+        <div className='project-card'>
+          <div className='project-img-ctr'>
+            <img className='project-img' src={HostingPreview} />
+          </div>
+          <p className='project-heading'>Hosting Application</p>
+          <a className='project_link' href='https://raghav-pixel.github.io/hosting-app/'  target='_blank'>
+            <h3 className='project-description'>Hosting Website using HTML, CSS & JS</h3>
+          </a>
         </div>
       </div>
 
