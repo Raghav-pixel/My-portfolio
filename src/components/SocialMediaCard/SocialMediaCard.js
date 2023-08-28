@@ -6,6 +6,22 @@ import InstagramIcon from '../../assets/images/instagram.svg';
 import GithubIcon from '../../assets/images/github.svg';
 
 const SocialMediaCard = () => {
+
+  const handleDownload = () => {
+    // Perform actions to prepare the file for download
+    // For example, create a Blob or fetch the file from an API
+
+    // Simulate a file to download (replace with your actual file URL)
+    const fileUrl = 'https://drive.google.com/file/d/1qsC5nHBBpHlwagYIwjBGZpRhh9-Z-xTh/view?usp=drive_link';
+
+    // Create a temporary anchor element to trigger the download
+    const anchor = document.createElement('a');
+    anchor.href = fileUrl;
+    anchor.target='_blank'
+    anchor.download = 'Raghav khanna resume.pdf'; // Set the desired filename
+    anchor.click();
+  };
+
   return (
     <div className='container'>
       <img className='ctr-profile' src={avatar} height={'170px'} width={'170px'} style={{ margin: '40px 0', borderRadius: '16px' }} alt='profile_pic' />
@@ -35,7 +51,9 @@ const SocialMediaCard = () => {
             </button>
         </a>
       </div>
-      <button className='cv-btn'>Download CV</button>
+      <button onClick={handleDownload} className='cv-btn'>
+          Download CV
+      </button>
     </div>
   );
 }
