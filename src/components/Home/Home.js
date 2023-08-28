@@ -28,7 +28,7 @@ const Home = ({ selectedHeader, setSelectedHeader }) => {
       <div className='home-ctr'>
         <span className='home-name'><span className='home-name-color'>Hi!</span> There I'm</span>
         <h2 className='home-job'>Professional <span className='home-name-color'>Front-end</span> Web Developer</h2>
-        <p className='home-description'>I am a Professional Front-end Web Developer and have been working in this field for more than 4 years. We are highly experts in converting PSD href HTML, PSD href Bootstrap, Figma href HTML, Sketch href HTML, and Xd href HTML ,CSS responsive design and pixel-perfect using bootstrap latest version, jQuery, JavaScript. I always take care of code with SEO friendly.</p>
+        <p className='home-description'>Hello, I'm Raghav Khanna, a passionate Frontend Developer with a strong proficiency in crafting captivating and responsive web experiences. With a deep-rooted knowledge of ReactJS, I thrive on creating seamless user interfaces that not only engage but also deliver exceptional functionality. <br></br>My toolkit includes a blend of modern tools like Bootstrap, Material UI, pure CSS, and JavaScript, allowing me to bring design concepts to life with precision. With over 2 years of hands-on experience, I've honed the art of transforming ideas into pixel-perfect realities, ensuring a seamless user journey across devices. Let's collaborate to shape the digital landscape together.</p>
       </div>
 
       <div className='tech-ctr'>
