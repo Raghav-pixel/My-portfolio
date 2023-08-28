@@ -7,6 +7,8 @@ import ReactIcon from '../../assets/images/react-js-icon.svg';
 import NodeIcon from '../../assets/images/node-js-icon.svg';
 import { useNavigate } from 'react-router-dom';
 import mobileDesign from '../../assets/images/mobile-design.jpg';
+import EntertainmentPreview from '../../assets/images/Entertainment-hub-preview.png';
+import NoteZipperPreview from '../../assets/images/NoteZipperPreview.png';
 
 const Home = ({ selectedHeader, setSelectedHeader }) => {
   const navigate = useNavigate();
@@ -46,10 +48,10 @@ const Home = ({ selectedHeader, setSelectedHeader }) => {
             {/* <img width={'60px'} height={'60px'} src={ReactIcon} alt='React icon' />
             <img width={'60px'} height={'60px'} src={NodeIcon} alt='Node icon' /> */}
             <div className='project-img-ctr-home'>
-              <img className='project-img-home' src={mobileDesign} />
+              <img className='project-img-home' src={EntertainmentPreview} />
             </div>          
             <div className='project-img-ctr-home'>
-              <img className='project-img-home' src={mobileDesign} />
+              <img className='project-img-home' src={NoteZipperPreview} />
             </div>          
             <div className='project-img-ctr-home-optional'>
               <img className='project-img-home' src={mobileDesign} />

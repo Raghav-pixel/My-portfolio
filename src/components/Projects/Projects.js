@@ -16,31 +16,70 @@ const Projects = () => {
           <div className='project-img-ctr'>
             <img className='project-img' src={EntertainmentPreview} />
           </div>
-          <p className='project-heading'>Entertainment Hub</p>
-          <a className='project_link' href='https://dashing-chimera-a560fb.netlify.app/' target='_blank'><h3 className='project-description'>Responsive Web App using Reactjs and material ui</h3></a>
+          <div className='project-head-ctr'>
+            <p className='project-heading'>Entertainment Hub</p>
+            <a 
+              href='https://github.com/Raghav-pixel/entertainment-hub-react' 
+              target='_blank' 
+              className='project-code'
+            >
+              Source code
+            </a>
+          </div>
+          <a 
+            className='project_link' 
+            href='https://dashing-chimera-a560fb.netlify.app/' 
+            target='_blank'
+          >
+            <h3 className='project-description'>Responsive Web App using Reactjs and material ui</h3>
+          </a>
         </div>
 
         <div className='project-card'>
           <div className='project-img-ctr'>
             <img className='project-img' src={NoteZipperPreview} />
           </div>
-          <p className='project-heading'>NoteZipper App</p>
-          <a className='project_link' href='https://mern-notes-app-awfz.onrender.com/' target='_blank'><h3 className='project-description'>MERN stack notes taking app using Redux</h3></a>
+          <div className='project-head-ctr'>
+            <p className='project-heading'>NoteZipper App</p>
+            <a 
+              href='https://github.com/Raghav-pixel/note-mern-app/tree/master' 
+              target='_blank' 
+              className='project-code'
+            >
+              Source code
+            </a>
+          </div>
+          <a 
+            className='project_link' 
+            href='https://mern-notes-app-awfz.onrender.com/' 
+            target='_blank'
+          >
+            <h3 className='project-description'>MERN stack notes taking app using Redux</h3>
+          </a>
         </div>
 
-        <div className='project-card'>
+        {/* <div className='project-card'>
           <div className='project-img-ctr'>
             <img className='project-img' src={mobileDesign} />
           </div>
           <p className='project-heading'>Shopping Cart App</p>
           <h3 className='project-description'>E-commerce web app using Reactjs with useReducer and context api</h3>
-        </div>
+        </div> */}
 
         <div className='project-card'>
           <div className='project-img-ctr'>
             <img className='project-img' src={HostingPreview} />
           </div>
-          <p className='project-heading'>Hosting Application</p>
+          <div className='project-head-ctr'>
+            <p className='project-heading'>Hosting Application</p>
+            <a 
+              href='https://github.com/Raghav-pixel/hosting-app' 
+              target='_blank' 
+              className='project-code'
+            >
+              Source code
+            </a>
+          </div>
           <a className='project_link' href='https://raghav-pixel.github.io/hosting-app/'  target='_blank'>
             <h3 className='project-description'>Hosting Website using HTML, CSS & JS</h3>
           </a>

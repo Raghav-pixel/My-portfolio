@@ -55,10 +55,25 @@
     transform: scale(1.1);
 }
 
+.project-head-ctr {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
 .project-heading {
     color: grey;
     font-size: 16px;
     margin: 20px 20px 10px 10px;
+}
+
+.project-code {
+    margin: 0;
+    color: rgba(151, 239, 196, 0.871);
+    /* color: rgb(240, 240, 161); */
+    cursor: pointer;
+    text-decoration: none;
 }
 
 .project_link {
