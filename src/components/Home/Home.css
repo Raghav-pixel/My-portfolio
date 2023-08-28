@@ -1,6 +1,6 @@
 .home-ctr {
     width: 310px;
-    height: 570px;
+    height: auto;
     /* background-color: rgb(29, 28, 34)!important; */
     background-color: rgb(20, 16, 28)!important;
     color: white;
@@ -57,7 +57,7 @@
 }
 
 .home-job {
-    font-size: 45px;
+    font-size: 2rem;
     margin: 20px 20px 10px 20px;
 }
 
@@ -80,14 +80,14 @@
 
 .project-img-ctr-home {
     overflow: hidden;
-    border-radius: 8px;
+    border-radius: 5px;
     margin-left: 10px;
     margin-top: 10px;   
 }
 .project-img-home {
     transition: transform .5s;
     width: 230px;
-    height: 100px;
+    height: 150px;
     object-fit: cover;
 }
 

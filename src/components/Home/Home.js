@@ -91,7 +91,7 @@ const Home = ({ selectedHeader, setSelectedHeader }) => {
             style={{ fontSize: '24px', margin: '0px 20px 30px 20px', cursor: 'pointer', color: 'rgba(47, 240, 147, 0.871)' }} 
             onClick={() => navigate("/experience")}
           >
-            SERVICES OFFER
+            SKILLS
           </h2>
         </div>
       </div>

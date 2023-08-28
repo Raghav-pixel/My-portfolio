@@ -71,7 +71,7 @@ const Projects = () => {
             <img className='project-img' src={HostingPreview} />
           </div>
           <div className='project-head-ctr'>
-            <p className='project-heading'>Hosting Application</p>
+            <p className='project-heading'>Hosting App</p>
             <a 
               href='https://github.com/Raghav-pixel/hosting-app' 
               target='_blank' 

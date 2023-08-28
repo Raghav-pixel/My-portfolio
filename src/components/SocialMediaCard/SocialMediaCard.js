@@ -11,7 +11,7 @@ const SocialMediaCard = () => {
       <img className='ctr-profile' src={avatar} height={'170px'} width={'170px'} style={{ margin: '40px 0', borderRadius: '16px' }} alt='profile_pic' />
       <div className='job-ctr'>
         <p className='profile-name'>HI! I'M <span style={{ color: 'rgba(47, 240, 147, 0.871)' }}>RAGHAV KHANNA</span></p>
-        <p className='profile-job'>FullStack Developer</p>
+        <p className='profile-job'>Frontend Developer</p>
       </div>
       <br></br>
       <div className='contact-ctr'>
